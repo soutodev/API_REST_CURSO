@@ -12,9 +12,10 @@ module.exports = {
   },
   rules: {
     'no-console': 0,
-    'class-methods-use-this': 'off',
-    'import/first': 'off',
-    'no-param-reassign': 'off',
-    'no-unused-vars': 'off',
+    'class-methods-use-this': 0,
+    'import/first': 0,
+    'no-param-reassign': 0,
+    'no-unused-vars': 0,
+    'no-empty-function': 0,
   },
 };

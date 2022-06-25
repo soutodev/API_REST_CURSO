@@ -6,7 +6,7 @@ import loginRequired from '../middlewares/loginRequired';
 const router = new Router();
 
 // Em uma aplicação real tais rotas/métodos não existem
-// router.get('/', loginRequired, userController.index); // Lista todos os usuários
+router.get('/', loginRequired, userController.index); // Lista todos os usuários
 // router.get('/:id', userController.show); // Lista usuário
 
 router.post('/', userController.store);
