@@ -17,5 +17,6 @@ module.exports = {
     'no-param-reassign': 0,
     'no-unused-vars': 0,
     'no-empty-function': 0,
+    camelcase: 0,
   },
 };

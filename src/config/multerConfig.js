@@ -6,8 +6,10 @@ const aleatorio = () => Math.floor(Math.random() * 10000 + 10000);
 export default {
   // filtrando e tratando o tipo de arquivo a ser enviado
   fileFilter: (req, file, cb) => {
-    if (file.mimetype !== 'image/png' && file.mimetype !== 'image/jpeg') {
-      return cb(new multer.MulterError('Arquivo precisa ser PNG ou JPEG'));
+    if (file.mimetype !== 'image/png'
+    && file.mimetype !== 'image/jpeg'
+    && file.mimetype !== 'image/jpg') {
+      return cb(new multer.MulterError('Arquivo precisa ser PNG ou JPEG/JPG'));
     }
 
     return cb(null, true);
